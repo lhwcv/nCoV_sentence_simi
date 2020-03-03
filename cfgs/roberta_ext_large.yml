@@ -1,0 +1,7 @@
+MODEL:
+    model_type: 'roberta'
+TRAIN:
+    learning_rate: 0.000015
+    num_train_epochs:  6
+    batch_size: 32
+    save_dir: '/workspace/wkdir/roberta_1/'
