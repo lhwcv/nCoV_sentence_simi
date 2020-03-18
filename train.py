@@ -46,7 +46,7 @@ if __name__ =='__main__':
     cfg.merge_from_file(args.cfg)
     setup_seed(1029)
     os.environ['CUDA_VISIBLE_DEVICES'] = cfg.TRAIN.device_ids_str
-    train_folds = [0]#[0,1,2,3,4,5]
+    train_folds = [0,1,2,3,4,5]
     kfold_train(cfg,args, n_fold=6, train_folds= train_folds)
 
     #train_data_path = args.train_val_files[0]
